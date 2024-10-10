@@ -1,0 +1,29 @@
+{
+  "name": "nuxt-account-manager",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "build-run": "nuxt build && node .output/server/index.mjs",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "docker": "nuxt dev",
+    "docker-build": "./docker-deploy.sh docker-build",
+    "docker-run": "./docker-deploy.sh docker-run",
+    "docker-build-run": "./docker-deploy.sh docker-build-run",
+    "docker-push": "./docker-deploy.sh docker-push"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "^0.5.1",
+    "bcrypt": "^5.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.9.0",
+    "nuxt": "^3.13.0",
+    "pinia": "^2.1.7"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.11.4"
+  }
+}
